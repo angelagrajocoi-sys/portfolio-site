@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> Portfolio - Angela Grajo </title>
+
+        <link rel="stylesheet" href="Style.css" />
+        <link href="fonts.googleapis.com" rel="stylesheet"/>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet"/> <!-- For icons -->
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    </head>
+
+    <body>
+        <!-- Content goes here -->
+
+        <header>
+            <div class="header-content">
+                <h1> Angela's Portfolio</h1>
+                <nav class="nav-links">
+                    <a href="#hero"> Home </a>
+                    <a href="#about"> About Me </a>
+                    <a href="#skills"> Skills </a>
+                    <a href="#projects"> Projects </a>
+                    <a href="#contact"> Contact </a>
+                </nav>
+                <button id="theme-toggle"> <i class="ri-sun-fill icon-bg"></i> </button>
+            </div>
+        </header>
+
+        <div class="hero" id="hero">
+            <div class="hero-content">
+                <div class="avatar-placeholder">
+                    <img src="about_photo.png" alt="Angela's Photo" class="about-image" />
+                </div>
+                
+                <h1>Hi there, I’m Angela!</h1>
+                <p> I am an aspiring penetration tester passionate about cybersecurity, ethical hacking, and protecting digital systems.</p>
+              <!--   <a href="#projects" class="proj-button">Click here for My Projects</a> -->
+            </div>
+        </div>
+
+        <div class="about" id="about">
+            <h2>About Me</h2>
+            <div class="about-card">
+                <div class="about-photo">
+                    <img src="about_photo2.png" alt="Angela's Photo" class="about-image2" />
+                </div>
+                    <div class="about-content">
+                        <h3> Angela Nicole C. Grajo </h3>
+                        <p> 
+                            I am an aspiring cybersecurity professional dedicated to understanding digital threats, system vulnerabilities, 
+                            and modern security practices. I thrive on learning advanced tools, strengthening defensive strategies, and continuously improving my technical skills.
+                            <br/> My goal is to become a skilled penetration tester, helping organizations identify and mitigate security risks. 
+                            I aim to contribute to safer digital environments through continuous learning, hands-on experience, and staying updated with the latest cybersecurity trends.
+                        </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills" id="skills">
+            <h2>Skills on Progress!</h2>
+            <p class="skills-intro">
+                Here are some of the skills I'm currently working on to enhance my capabilities as an aspiring cybersecurity professional:
+            </p>
+            <div class="skill-tags">
+                <span class="skill-tag"> <i class="ri-html5-fill"></i> HTML5 </span>
+                <span class="skill-tag"> <i class="ri-css3-line"></i> CSS </span>
+                <span class="skill-tag"> <i class="ri-javascript-line"> </i> JavaScript </span>
+                <span class="skill-tag"> C# </span>
+                <span class="skill-tag"> <i class="ri-java-line"></i> Java </span>
+                <span class="skill-tag"> <i class="ri-shield-fill"> </i>Metasploit </span>
+            </div>
+        </div>
+
+        <div class="projects" id="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Vulnerability Assessment Report</h3>
+                    <p>A comprehensive report detailing the findings from a vulnerability assessment conducted on a sample network, including identified vulnerabilities and recommended remediation steps.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Penetration Testing Lab Setup</h3>
+                    <p>A virtual lab environment configured for practicing penetration testing techniques, including various vulnerable machines and tools for ethical hacking exercises.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Cybersecurity Blog</h3>
+                    <p>A personal blog where I share insights, and updates on the latest trends in cybersecurity, ethical hacking, and digital defense strategies.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <h2> Let's get in touch! </h2>
+            <div class="contact-container">
+                <div class="contact-card">
+                    <i class="ri-mail-fill contact-icon"> grajo.angela21@gmail.com </i>
+                    <i class="ri-phone-fill contact-icon"> 0976-002-3793 </i>
+                </div>
+
+                <!-- <form class ="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required/>
+                        <input type="email" placeholder="Your Email" required/>
+                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="submit"> Send Message </button>
+                    </div>
+                </form> -->
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Angela's Portfolio. All rights reserved.</p>
+        </footer>
+        
+        <script defer src="Javascript.js"></script>
+    </body>
+</html>
