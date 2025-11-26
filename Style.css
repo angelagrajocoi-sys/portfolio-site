@@ -467,7 +467,7 @@ body.dark-mode footer
     {
         position: static;
         width: 100%;
-        z-index: auto;
+        z-index: 10;
     }
 
     header .header-content 
@@ -511,9 +511,8 @@ body.dark-mode footer
 
     .hero 
     {
-        padding: 2rem 1rem;
+        padding: 5rem 1rem;
         height: auto;
-        padding-top:0;
     }
 
     .hero h1 
@@ -531,6 +530,8 @@ body.dark-mode footer
     .avatar-placeholder img 
     {
         width: 8rem;
+        z-index: 1 !important;
+        position: relative;
     }
 
     .about-card 
@@ -550,7 +551,8 @@ body.dark-mode footer
     {
         width: 100%;
         max-width: 15rem;
-
+        z-index: 1 !important;
+        position: relative;
     }
 
     .about-content 
@@ -570,7 +572,6 @@ body.dark-mode footer
         font-size: 1.2rem;
         padding: 0 1rem;
     }
-    
 }
 
 /* MOBILE PHONES: 480px and below */
