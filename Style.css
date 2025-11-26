@@ -65,6 +65,7 @@ header h1
     position: absolute;
     left: 2rem;
     text-align: left;
+    font-size: 1.5em;
 }
 
 header nav
@@ -460,7 +461,7 @@ body.dark-mode footer
     color: var(--light-pink) !important;
     transition: color 0.4s ease;
 }
-/* Mobile: 768px and below */
+/* Mobile: 1000px and below */
 @media (max-width: 1000px) 
 {
     header
@@ -481,7 +482,7 @@ body.dark-mode footer
     header h1 
     {
         position: static;
-        font-size: 1rem;
+        font-size: 1.2rem;
         text-align: center;
         margin-bottom: 0.5rem;
     }
@@ -515,7 +516,7 @@ body.dark-mode footer
         height: auto;
     }
 
-    .hero h1 
+    .hero h1, .about h2
     {
         font-size: 2rem;
     }
@@ -577,20 +578,24 @@ body.dark-mode footer
 /* MOBILE PHONES: 480px and below */
 @media (max-width: 480px) {
 
-    header h1 {
-        font-size: 1.4rem;
+    header h1 
+    {
+        font-size: 1rem;
     }
 
-    header nav a {
+    header nav a 
+    {
         font-size: 0.9rem;
     }
 
-    .proj-button {
+    .proj-button 
+    {
         font-size: 1rem;
         padding: 10px 20px;
     }
 
-    .hero h1 {
+    .hero h1, .about h2, .projects h2, .contact h2
+    {
         font-size: 1.7rem;
     }
 }
