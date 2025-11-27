@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> COI Enrollment  Form </title>
+       
+        <style>
+            
+            img /* tells how the image inserted would look like */
+                {
+                    width:150px; /* size in pixel */
+                    height:150px; 
+                    display: block; /* centers the image */
+                    margin:auto;
+                }
+
+            header /* Header text styling */
+                {
+                    text-align: center; /* centers heading text */
+                    color: white;
+                }
+
+            .studentinfo /* styling for the  form */
+                {
+                        background:rgba(0, 0, 0, 0.25); /* semi-transparent background */
+                        display: flex; /* for layout */
+                        flex-wrap: wrap; /* allows the form to wrap to the next line if necessary automatically */
+                        margin: 30px auto; /* centers the form horizontally */
+                        box-shadow:1px 0 4px 4px rgb(0, 0, 0, 0.2); /* shadow around the form */
+                        border-radius: 20px; /* rounded corners */
+                        width: fit-content;  /* width fits the content only and not the whole page horizontally */
+                        text-align: justify;
+                        font-size: 20px;
+                        color: white;
+                        padding: 20px; /* space inside the form */
+                }
+
+            input, select /* styling for the input fields and drop-down selections */
+                {
+                    border-radius: 8px; /* rounded corners for input fields */
+                    font-size: 18px; /* font size for input text */
+                    text-align: center;
+                }
+            
+           body /* overall styling for the body of the webpage */
+                {
+                    background: radial-gradient(#1f1fa3 30%, #29bedb 100%);
+                    padding: 20px;
+                    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+                }
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <img src="../Resources/PCU_LOGO.png" alt="PCU LOGO" > <!-- to display an image-->
+            <h1> COI Enrollment Form — Student Information </h1> <!-- header text -->
+        </header>
+
+        <div class = studentinfo>
+            <form>
+                <label for ="StudentName"> <strong> Student Name: </strong> </label>
+                <input type ="text" id="StudentName" placeholder="First Name"  > <!--text field-->
+                <input type ="text" id="StudentName" placeholder="Last Name"  > <!--text field-->
+            
+                <br>
+                <br>
+
+                <label for="BirthDate"> <strong> Birth Date: </strong> </label>
+                <input type ="date" id="BirthDate" name="BirthDate" > <!--date field-->
+
+                <br>
+                <br>
+
+                <label for="Gender" > <strong> Gender: </strong></label>
+
+                <input type ="radio" id="Male" name="Gender" value="Male"> <!--radio button-->
+                <label for="Male" >  Male </label>
+
+                <input type ="radio" id="Female" name="Gender" value="Female"> <!--radio button-->
+                <label for="Male" >  Female </label>
+
+                <br>
+                <br>
+
+                <label for ="Address"> <strong> Address: </strong></label>
+                <input type ="text" id="Address" placeholder="Full Address" size="71" > <!--text field-->
+
+                <br>
+                <br>
+
+                <label for="ContactNumber"> <strong> Contact Number: </strong></label>
+                <input type ="text" id="ContactNumber" placeholder="000 - 000 - 0000" size="15"> <!--text field-->
+
+                <label for="EmailAddress"> <strong> Email Address: </strong></label>
+                <input type ="text" id="EmailAddress" placeholder="name@example.com" size="25" > <!--text field-->
+
+                <hr>
+
+                <input type ="radio" id="OldStudent" name="Status" value="OldStudent"> <!--radio button-->
+                <label for="Status"> <strong> Old Student </strong> </label>
+
+                <input type ="radio" id="NewStudent" name="Status" value="NewStudent"> <!--radio button-->
+                <label for="Status"> <strong> New Student </strong> </label>
+
+                <br>
+                <br>
+                
+                <label for="Course"> <strong> COI Course: </strong></label> <!-- drop down selection for the course -->
+                <select id ="Course", name="Cousee">
+                    <option value ="default"> Pick one </option>
+                    <option value ="bsit"> BSIT </option>
+                    <option value ="bsit"> BSCS </option>
+                    <option value ="bsit"> BSCpE </option>
+                    <option value ="bsit"> BMA </option>
+                </select>
+
+                <label for="YearSem"> <strong> Year and Semester: </strong></label> <!-- drop down selection for the year and sem -->
+                <select id ="YearSem", name="YearSem">
+                    <option value ="default"> Pick one </option>
+                    <option value ="1-1"> 1st Year, 1st Sem </option>
+                    <option value ="1-2"> 1st Year, 2nd Sem </option>
+                    <option value ="2-1"> 2nd Year, 1st Sem </option>
+                    <option value ="2-2"> 2nd Year, 2nd Sem </option>
+                    <option value ="3-1"> 3rd Year, 1st Sem </option>
+                    <option value ="3-2"> 3rd Year, 2nd Sem </option>
+                    <option value ="4-1"> 4th Year, 1st Sem </option>
+                    <option value ="4-2"> 4th Year, 2nd Sem  </option>
+                </select>
+
+                <br>
+                <br>
+
+                <input type ="submit" value="submit"> <!--submit button-->
+                <input type ="reset" value="reset"> <!--reset button-->
+            </form>
+        </div>
+    </body>
+</html>

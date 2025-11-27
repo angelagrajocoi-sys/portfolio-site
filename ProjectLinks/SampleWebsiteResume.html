@@ -1,0 +1,194 @@
+<!DOCTYPE html> <!--Tells the browser that this is an HTML5 document -->
+
+    <html> <!-- Root element of the HTML document, where everything in the page is contained -->
+
+        <head> <!-- Contains meta-information about the document, such as its title and links to stylesheets-->
+
+            <title> RESUME OF GRAJO </title> <!--Sets the title of the webpage, which appears in the browser tab -->
+
+            <style> /* Holds CSS styling to control the appearance of the elements on the page */
+                img /* tells how the image inserted would look like */
+                {
+                    width:150px; /* size in pixel */
+                    height:150px; 
+                    border-radius:50%; /* makes the image circular */
+                    display: block; /* centers the image */
+                    margin:auto;
+                }
+
+                header /* center's text, add bg image with rounded corners, limited the width of the image */
+                {
+                    text-align: center; /* centers heading text */
+                    padding: 2%; /* space inside the header */
+                    background-image: url('../Resources/bg-header.jpg');
+                    background-position: center;
+                    border-radius: 40px;
+                    max-width: 90%;
+                    margin: auto
+                }
+
+                header h1 /* main heading styling */
+                {
+                    font-size: 2.5em; 
+                    color: white;
+                    margin-bottom: 0px;
+                    line-height: normal;
+                }
+                header p
+                 {
+                    font-size: 1.2em;
+                    color:white;
+                    line-height: normal;
+                 }
+
+                .contact-info /* displays the container for contact info side-by-side and with appropriate spacing*/
+                {
+                    display: inline-flex;
+                    justify-content: center;
+                    gap: 20px;
+                }
+                    .email, .phone, .location /* styling for the contact info */
+                    {
+                        background-color: rgba(30, 14, 100, 100);
+                        padding: 5px 10px;
+                        border-radius: 20px;
+                        line-height: 1.2;
+                    }
+
+                body /* overall styling for the body of the webpage */
+                {
+                    font-family: 'Times New Roman', Times, serif;
+                    background: rgb(0, 0, 0, 0.1); /* light transparent black bg color */
+                    color: #0b063a; /* dark blue text color */
+                    padding: 20px; /* space around the content */
+                }
+
+                .container /* styling for the container for the main sections */
+                {
+                    display:inline-flex;
+                    flex-wrap: wrap; /* allows the cards to wrap to the next line if necessary automatically */
+                    gap: 20px;
+                    margin-top: 30px;
+                    justify-content: center;
+                }
+                    .about-me /* styling for the about me card */
+                    {
+                        background-color: rgb(199, 206, 241);
+                        padding: 20px;
+                        border-radius: 12px;
+                        box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* adds shadow effect */
+                        max-width: 80%;
+                    }
+                        .about-me h2 /* heading styling for the about me section */
+                        {
+                            color: #66a6ff;
+                            font-size: 25px;
+                            margin: 2px 0 0 0
+                        }
+                        .about-me p 
+                        {
+                            text-align: justify;
+                            font-size: 18px;
+                        }
+                                              
+                    .other-card /* styling for other cards like basic info, education, skills, experiences */
+                    {
+                        background-color: white;
+                        padding: 20px;
+                        border-radius: 12px;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+                    }
+                        .other-card h2 
+                        {
+                            color: #66a6ff;
+                            font-size: 25px;
+                            margin: 2px 0 0 0
+                        }
+                        .other-card p 
+                        {
+                            font-size: 18px;
+                            text-align:left;
+                            margin: 2px 0 0 0;
+                        }
+                        .other-card ul 
+                        {
+                            padding-left: 20px;
+                            font-size: 18px;
+                        }
+            </style> <!-- closing set for styling -->
+        </head>
+        <body> <!-- contains everything that will be displayed on the page-->
+
+            <header> <!--  top section of the webpage-->
+                <img src="../Resources/ID_PHOTO.jpg" alt="ID Photo" > <!-- to display an image-->
+                <h1>Angela Nicole C. Grajo</h1> <!-- main heading which is my name-->
+                <p> <strong>BSIT Student, Aspiring Penetration Tester  </strong> </p> <!-- short  bold escription--> 
+
+                <div class="contact-info"> <!-- grouping container for my contact information in the header -->
+                    <div class = "email">
+                        <p> Email: grajo.angela21@gmail.com </p> 
+                    </div>
+
+                    <div class = "phone">
+                        <p> Phone: 0976-002-3793 </p> 
+                    </div>
+
+                    <div class = "location"> 
+                        <p> Location: Paco, Manila </p> 
+                    </div>
+                </div>
+            </header>
+
+            <div class="container"> <!-- another grouping container that has a differnt bg colors and holds all main sections in the body -->
+                <div class ="about-me"> 
+                    <h2>About Me</h2> <!-- smaller heading for this section -->
+                    <p> Hello! I'm Angela Nicole C. Grajo, an <i> aspiring penetration tester </i> passionate about cybersecurity, ethical hacking, and protecting digital systems. 
+                        I thrive on solving challenges, discovering vulnerabilities, and continuously expanding my skills.
+                    </p>
+                </div>
+
+                <div class ="other-card"> 
+                    <h2>Basic Information</h2>
+                    <ul> <!-- unordered list in bullet form -->
+                        <li> <strong>Age:</strong> 21 years old </li> <!-- listing of items -->
+                        <li> <strong>Civil Status:</strong> Single </li>
+                        <li> <strong>Citizenship:</strong> Filipino </li>
+                        <li> <strong>Language:</strong> English, Tagalog </li>
+                    </ul>
+                </div>
+
+                <div class ="other-card">
+                    <h2>Education</h2>
+                    <ul>
+                        <li> Philippine Christian University - Manila (2023-present) <strong> Dean's Lister</strong> </li>
+                        <li> Jose Rizal Univeristy (2021-2023) <strong> With High Honor</strong> </li>
+                        <li> Jesus Reigns Christian Academy (2017-2021) <strong> With High Honor</strong> </li>
+                        <li> Epifanio Delos Santos Elementary School (2014-2017) <strong> Fourth Honorable Mention </strong> </li>
+                    </ul>
+                </div>
+
+                <div class ="other-card">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li> Proficient in programming languages such as Python, Java, and C++ </li>
+                        <li> Familiar with penetration testing tools like Metasploit, Nmap, and Wireshark </li>
+                        <li> Strong understanding of network protocols and security concepts </li>
+                        <li> Excellent problem-solving and analytical skills </li>
+                        <li> Effective communication and teamwork abilities </li>
+                        <li> Eager to learn, adaptable, Self-reliant </li>
+                    </ul>
+                </div>
+
+                <div class ="other-card">
+                    <h2>Experiences</h2>
+                    <ul>
+                        <li> <strong> XYZA Tech Solutions - Intern </strong> (2024 - Present) </li>
+                        <p> Documented and reported potential security flaws to senior testers</p>
+                        <li> <strong> ABC Cybersecurity Firm - Intern </strong> (2023 - 2024) </li>
+                        <p> Assisted in vulnerability assessments and penetration testing engagements</p> 
+                        <li> <strong> DEF IT Services - Intern </strong> (2022 - 2023) </li>
+                        <p> Participated in security audits and risk assessments for clients</p>
+                    </ul>
+            </div>
+        </body>
+    </html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html> <!--Tells the browser that this is an HTML5 document -->
+<html> <!-- Root element of the HTML document, where everything in the page is contained -->
+    <head> <!-- Contains meta-information about the document, such as its title and links to stylesheets-->
+        <title> Multiplication Table of 5 </title> <!--Sets the title of the webpage, which appears in the browser tab -->
+        <style> /* Holds CSS styling to control the appearance of the elements on the page */
+            header
+                {
+                    background: linear-gradient(#f5dfdf 21%, #f9afaf 100%);
+                    padding: 40px;
+                    max-width: fit-content;
+                    margin:auto;
+                    border-radius: 20px;
+                    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                    text-align: center;
+                    font-family:monospace;
+                }
+            header h1 
+                {
+                    font-size: 2.5em;
+                    color: #3f556e;
+                    margin:auto
+                }
+            header h3 
+                {
+                    font-size: 1.8em;
+                    color: rgb(255, 255, 255);
+                    margin:auto
+                }
+
+            body 
+                {
+                    background: radial-gradient(#f9afaf 26%,#94BBE9 80%); 
+                    font-family: monospace;
+                    color: #ffffff; 
+                    padding: 20px; 
+                }
+
+            table
+                {
+                    border-collapse: collapse;
+                    background: linear-gradient(#f9afaf 21%,#94BBE9 100%); 
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    margin: 30px auto;
+                    box-shadow:1px 0 4px 4px rgba(255,255,255,1);
+                    width: fit-content;
+                    text-align: center;
+                    font-size: 50px;
+                }
+              td
+                {
+                    border: 5px solid rgb(255, 255, 255);
+                    border-collapse:collapse;
+                    padding: 15px;
+                }
+            th
+                {
+                    color: #3f556e;
+                    border: 5px solid #ca8b8b;
+                    border-collapse:collapse;
+                    padding: 15px;
+                    background:#f9afaf
+                }
+        </style>
+    </head>
+
+    <body> 
+        <header> 
+            <h1> <i> Multiplication Table of Five </i> </h1>
+            <h3> by Angela Nicole Grajo </h3>
+        </header>
+
+        <table>
+
+            <tr class = table-heading >
+                <th> X </th>
+                <th> 1 </th>
+                <th> 2 </th>
+                <th> 3 </th>
+                <th> 4 </th>
+                <th> 5 </th>
+            </tr>
+
+            <tr class = 1strow>
+                <th> 1 </th>
+                <td> 1 </td>
+                <td> 2 </td>
+                <td> 3 </td>
+                <td> 4 </td>
+                <td> 5 </td>
+            </tr>
+            
+            <tr class = 2ndrow>
+                <th> 2 </th>
+                <td> 2 </td>
+                <td> 4 </td>
+                <td> 6 </td>
+                <td> 8 </td>
+                <td> 10 </td>
+            </tr>
+
+            <tr class = 3rdrow>
+                <th> 3 </th>
+                <td> 3 </td>
+                <td> 6 </td>
+                <td> 9 </td>
+                <td> 12 </td>
+                <td> 15 </td>
+            </tr>
+
+             <tr class = 4throw>
+                <th> 4 </th>
+                <td> 4 </td>
+                <td> 8 </td>
+                <td> 12 </td>
+                <td> 16 </td>
+                <td> 20 </td>
+            </tr>
+             <tr class = 5throw>
+                <th> 5 </th>
+                <td> 5 </td>
+                <td> 10 </td>
+                <td> 15 </td>
+                <td> 20 </td>
+                <td> 25 </td>
+            </tr>
+        </table>
+    </body>
+</html>

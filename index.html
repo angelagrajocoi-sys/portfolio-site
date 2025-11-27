@@ -33,7 +33,7 @@
         <div class="hero" id="hero">
             <div class="hero-content">
                 <div class="avatar-placeholder">
-                    <img src="about_photo.png" alt="Angela's Photo" class="about-image" />
+                    <img src="Resources/about_photo.png" alt="Angela's Photo" class="about-image" />
                 </div>
                 
                 <h1>Hi there, I’m Angela!</h1>
@@ -46,7 +46,7 @@
             <h2>About Me</h2>
             <div class="about-card">
                 <div class="about-photo">
-                    <img src="about_photo2.png" alt="Angela's Photo" class="about-image2" />
+                    <img src="Resources/about_photo2.png" alt="Angela's Photo" class="about-image2" />
                 </div>
                     <div class="about-content">
                         <h3> Angela Nicole C. Grajo </h3>
@@ -79,41 +79,83 @@
             <h2>My Projects</h2>
             <div class="project-grid">
                 <div class="project-card">
-                    <h3>Vulnerability Assessment Report</h3>
-                    <p>A comprehensive report detailing the findings from a vulnerability assessment conducted on a sample network, including identified vulnerabilities and recommended remediation steps.</p>
+                    <h3> Beginner's Static Websites </h3>
+                    <p> A compilation of some of my early static website designs. </p>
+                    <div class="logo">
+                        <img src="Resources/website-img.png" alt="Penetration Setup Icon" class="logo-img">
+                    </div>
+                    <div class="project-links">
+                        <a href="ProjectLinks/Enrollment_Form.html" target="_blank" rel="nonopener nofererrer" class="proj-link"> 
+                            <i class="ri-arrow-right-up-line"></i> Enrollment Form </a>
+                        <a href="ProjectLinks/SampleWebsiteResume.html" target="_blank" rel="nonopener nofererrer"  class="proj-link">
+                            <i class="ri-arrow-right-up-line"></i> Sample Website Resume </a>
+                        <a href ="ProjectLinks/MultiplicationTable.html" target="_blank" rel="nonopener nofererrer" class="proj-link"> 
+                            <i class="ri-arrow-right-up-line"></i> Multiplication Table </a>
+                    </div>
+                    <h4> Tools Used: </h4>
+                    <div class="tools-tags">
+                        <span class="tool-tag"> HTML </span>
+                        <span class="tool-tag"> CSS </span>
+                    </div>
                 </div>
                 <div class="project-card">
                     <h3>Penetration Testing Lab Setup</h3>
                     <p>A virtual lab environment configured for practicing penetration testing techniques, including various vulnerable machines and tools for ethical hacking exercises.</p>
+                    
+                    <div class="logo">
+                        <img src="Resources/pt-img.png" alt="Penetration Setup Icon" class="logo-img">
+                    </div>
+                    <h4> Tools Used: </h4>
+                    <div class="tools-tags">
+                        <span class="tool-tag"> Kali Linux </span>
+                        <span class="tool-tag"> Metasploit </span>
+                        <span class="tool-tag"> VMware Workstation Pro </span>
+                    </div>
                 </div>
                 <div class="project-card">
-                    <h3>Cybersecurity Blog</h3>
-                    <p>A personal blog where I share insights, and updates on the latest trends in cybersecurity, ethical hacking, and digital defense strategies.</p>
+                    <h3> Point of Sale System </h3>
+                    <p> A Point of Sale Application System that handles my small business's, Celes Crafty Jewelry, sales transactions. It also generates sales graphs to track trends. </p>
+                    <h5> Take a peek of the look of the login page, admin landing page and the POS page itself! </h5>
+                    <div class="picture">
+                        <img src="Resources/LoginPage.png" alt="POS Login Page" class="POS-photo" onClick="openModal(this.src)">
+                        <img src="Resources/AdminLandingPage.png" alt="POS Admin Landing Page" class="POS-photo1" onClick="openModal(this.src)">
+                        <img src="Resources/POSPage.png" alt="POS Page" class="POS-photo" onClick="openModal(this.src)">
+                    </div>
+                    <h4> Tools Used: </h4>
+                    <div class="tools-tags">
+                        <span class="tool-tag"> C# </span>
+                        <span class="tool-tag"> WinForms Visual Studio</span>
+                    </div>
                 </div>
             </div>
         </div>
+
 
         <div class="contact" id="contact">
             <h2> Let's get in touch! </h2>
             <div class="contact-container">
-                <div class="contact-card">
-                    <i class="ri-mail-fill contact-icon"> grajo.angela21@gmail.com </i>
-                    <i class="ri-phone-fill contact-icon"> 0976-002-3793 </i>
-                </div>
-
-                <!-- <form class ="contact-form">
+                <form action="https://api.web3forms.com/submit" method="POST" target="_blank">
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" required/>
-                        <input type="email" placeholder="Your Email" required/>
-                        <textarea rows="5" placeholder="Your Message" required></textarea>
-                        <button type="submit" class="submit"> Send Message </button>
+                        <input type="hidden" name="access_key" value="52588170-de5d-49f4-9101-8ba554004170">
+                        <input type="text" name="name" placeholder="Your Name" required/>
+                        <input type="email" name="email" placeholder="Your Email" required/>
+                        <textarea rows="5" name="message" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="submit" target="_blank" > Send Message </button>
                     </div>
-                </form> -->
+                </form> 
+            
             </div>
         </div>
 
+         <div id="img-modal" class="modal">
+            <span class="close" onClick="closeModal()"> <i class="ri-close-circle-fill"></i> </span>
+            <img id="modal-img" class="modal-img" alt=" "> 
+        </div>
+
         <footer>
-            <p>&copy; 2025 Angela's Portfolio. All rights reserved.</p>
+            <h4> <i class="ri-mail-fill contact-icon"> grajo.angela21@gmail.com </i> </h4>
+            <h4>&copy; 2025 Angela's Portfolio. All rights reserved.</h4>
+            <h4> <i class="ri-phone-fill contact-icon"> 0976-002-3793 </i> </h4>
         </footer>
         
         <script defer src="Javascript.js"></script>
