@@ -20,11 +20,6 @@ body
 
 body.dark-mode
 {
-    /*background: radial-gradient(
-    circle at top left,
-    #c36b7b 10%,
-    #3c3338 40%,
-    #2f2a2d 100%); */
     background-image: url('Resources/bg-darkmode.jpeg');
     background-size: cover;
     background-position: center;
@@ -89,7 +84,6 @@ header button
     flex: 0, 0 auto;
     position: absolute;
     right: 32px;
-
     background:#FFA6B6;
     color: var(--dark-walnut);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -189,7 +183,6 @@ body.dark-mode .avatar-placeholder img
 }
 
 /* Float up animation for all of the elements in the website */
-
 @keyframes floatUp 
 {
   0% {
@@ -718,7 +711,7 @@ body.dark-mode footer
         padding: 1.5rem;
         margin:auto;
     }
-    
+
     .proj-button 
     {
         font-size: 1rem;

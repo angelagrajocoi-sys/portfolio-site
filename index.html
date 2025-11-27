@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" /> <!-- to support almost all characters such as sysmbols and emojis -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- for responsive website -->
+
         <title> Portfolio - Angela Grajo </title>
 
-        <link rel="stylesheet" href="Style.css" />
-        <link href="fonts.googleapis.com" rel="stylesheet"/>
-        <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet"/> <!-- For icons -->
-        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+        <link rel="stylesheet" href="Style.css" /> <!-- link to the styling -->
+        <link href="fonts.googleapis.com" rel="stylesheet"/> <!-- for custom font -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet"/> <!-- For icons (used inside <i> </i> tags)-->
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> <!-- for extra icon-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script> <!-- for smooth transition -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script> <!-- to enable scroll-based animation effects with gsap -->
     </head>
 
     <body>
-        <!-- Content goes here -->
-
-        <header>
+        <!-- content goes here -->
+        <header> <!-- header content -->
             <div class="header-content">
                 <h1> Angela's Portfolio</h1>
-                <nav class="nav-links">
+                <nav class="nav-links"> 
                     <a href="#hero"> Home </a>
                     <a href="#about"> About Me </a>
                     <a href="#skills"> Skills </a>
@@ -30,19 +30,17 @@
             </div>
         </header>
 
-        <div class="hero" id="hero">
+        <div class="hero" id="hero">  <!-- hero or the home content -->
             <div class="hero-content">
                 <div class="avatar-placeholder">
                     <img src="Resources/about_photo.png" alt="Angela's Photo" class="about-image" />
                 </div>
-                
                 <h1>Hi there, I’m Angela!</h1>
                 <p> I am an aspiring penetration tester passionate about cybersecurity, ethical hacking, and protecting digital systems.</p>
-              <!--   <a href="#projects" class="proj-button">Click here for My Projects</a> -->
             </div>
         </div>
 
-        <div class="about" id="about">
+        <div class="about" id="about">  <!-- about content -->
             <h2>About Me</h2>
             <div class="about-card">
                 <div class="about-photo">
@@ -60,7 +58,7 @@
             </div>
         </div>
 
-        <div class="skills" id="skills">
+        <div class="skills" id="skills">  <!-- skills content -->
             <h2>Skills on Progress!</h2>
             <p class="skills-intro">
                 Here are some of the skills I'm currently working on to enhance my capabilities as an aspiring cybersecurity professional:
@@ -75,7 +73,7 @@
             </div>
         </div>
 
-        <div class="projects" id="projects">
+        <div class="projects" id="projects">  <!-- projects content -->
             <h2>My Projects</h2>
             <div class="project-grid">
                 <div class="project-card">
@@ -84,7 +82,7 @@
                     <div class="logo">
                         <img src="Resources/website-img.png" alt="Penetration Setup Icon" class="logo-img">
                     </div>
-                    <div class="project-links">
+                    <div class="project-links"> <!-- to open the links in a new tab/browser target="_blank is used"-->
                         <a href="ProjectLinks/Enrollment_Form.html" target="_blank" rel="nonopener nofererrer" class="proj-link"> 
                             <i class="ri-arrow-right-up-line"></i> Enrollment Form </a>
                         <a href="ProjectLinks/SampleWebsiteResume.html" target="_blank" rel="nonopener nofererrer"  class="proj-link">
@@ -101,7 +99,6 @@
                 <div class="project-card">
                     <h3>Penetration Testing Lab Setup</h3>
                     <p>A virtual lab environment configured for practicing penetration testing techniques, including various vulnerable machines and tools for ethical hacking exercises.</p>
-                    
                     <div class="logo">
                         <img src="Resources/pt-img.png" alt="Penetration Setup Icon" class="logo-img">
                     </div>
@@ -116,7 +113,7 @@
                     <h3> Point of Sale System </h3>
                     <p> A Point of Sale Application System that handles my small business's, Celes Crafty Jewelry, sales transactions. It also generates sales graphs to track trends. </p>
                     <h5> Take a peek of the look of the login page, admin landing page and the POS page itself! </h5>
-                    <div class="picture">
+                    <div class="picture"> <!-- onClick then js function to allow user to open the photo -->
                         <img src="Resources/LoginPage.png" alt="POS Login Page" class="POS-photo" onClick="openModal(this.src)">
                         <img src="Resources/AdminLandingPage.png" alt="POS Admin Landing Page" class="POS-photo1" onClick="openModal(this.src)">
                         <img src="Resources/POSPage.png" alt="POS Page" class="POS-photo" onClick="openModal(this.src)">
@@ -131,25 +128,25 @@
         </div>
 
 
-        <div class="contact" id="contact">
+        <div class="contact" id="contact">  <!-- header content -->
             <h2> Let's get in touch! </h2>
             <div class="contact-container">
-                <form action="https://api.web3forms.com/submit" method="POST" target="_blank">
+                <form action="https://api.web3forms.com/submit" method="POST" target="_blank"> <!-- used Web3Forms so I can receive the messages to my email directly -->
                     <div class="form-group">
-                        <input type="hidden" name="access_key" value="52588170-de5d-49f4-9101-8ba554004170">
+                        <input type="hidden" name="access_key" value="52588170-de5d-49f4-9101-8ba554004170"> <!-- accesss key web3form gave to me -->
                         <input type="text" name="name" placeholder="Your Name" required/>
                         <input type="email" name="email" placeholder="Your Email" required/>
                         <textarea rows="5" name="message" placeholder="Your Message" required></textarea>
-                        <button type="submit" class="submit" target="_blank" > Send Message </button>
+                        <button type="submit" class="submit" > Send Message </button>
                     </div>
                 </form> 
             
             </div>
         </div>
 
-         <div id="img-modal" class="modal">
-            <span class="close" onClick="closeModal()"> <i class="ri-close-circle-fill"></i> </span>
-            <img id="modal-img" class="modal-img" alt=" "> 
+         <div id="img-modal" class="modal"> <!-- this creates an image box that pops up over the page when the user clicks on the photos with a close button -->
+            <span class="close" onClick="closeModal()"> <i class="ri-close-circle-fill"></i> </span> <!-- the close button, once clicked, the function closeModal will be called-->
+            <img id="modal-img" class="modal-img" alt=" "> <!-- the clicked image inside the image box-->
         </div>
 
         <footer>
@@ -158,6 +155,6 @@
             <h4> <i class="ri-phone-fill contact-icon"> 0976-002-3793 </i> </h4>
         </footer>
         
-        <script defer src="Javascript.js"></script>
+        <script defer src="Javascript.js"></script> <!-- link to the javascript -->
     </body>
 </html>
